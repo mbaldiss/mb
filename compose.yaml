@@ -1,0 +1,10 @@
+version: '1'
+services:
+  app:
+    image: node:18.18.2-alpine3.18
+    ports:
+      - '3000:3000'
+  db:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
